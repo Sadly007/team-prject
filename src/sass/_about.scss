@@ -1,0 +1,55 @@
+.about {
+    border-color: var(--background-color);
+    padding-top: 60px;
+    &_label {
+        margin-bottom: 15px;
+        font-family: var(--secondary-font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.17;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--secondary-accent-color);
+    }
+    &_title {
+        margin-bottom: 32px;
+        font-family: var(--secondary-font-family);
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--accent-text-color);
+    }
+    &_photo {
+        margin-bottom: 40px;
+    }
+    &_wrap {
+        // width: 220px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        // margin-left: auto;
+        // margin-right: auto;
+        background-image: url(../images/about/milk-mob-1x.png);
+        background-repeat: no-repeat;
+        // background-position: center;
+        background-size: auto 133px;
+    }
+    &_text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        letter-spacing: 0.04em;
+    }
+    &_text--change {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        letter-spacing: 0.04em;
+        color: var(--secondary-text-color);
+    }
+
+}
