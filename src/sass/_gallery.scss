@@ -3,7 +3,7 @@
     grid-template-rows: 
       repeat(12, 9px);
     grid-template-columns: 
-      repeat(8, 1.2fr);
+      repeat(7, 1fr);
     grid-gap: 2.5px;
   }
   
@@ -15,6 +15,10 @@
     grid-column: 2/ 3;
     grid-row: 4/ 8;
   }
+
+//   .item:hover {
+//    transform: scale(1.2);
+//   }
   
   .item:nth-child(3) {
     grid-column: 2 / 3;
@@ -55,7 +59,7 @@
   
   .grid {
     margin:0 auto;
-    max-width:320px;
+    width:320px;
   }
   
   .grid > .item {
