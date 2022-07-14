@@ -1,6 +1,7 @@
 .advantages {
     padding-top: 20px;
     padding-bottom: 40px;
+    background-color: var(--background-color);
     &__number {
         font-family: var(--secondary-font-family), sans-serif;
         @include font (36px, 400, 1.14);
