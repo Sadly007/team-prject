@@ -1,110 +1,116 @@
+.gallery > .container {
+  padding-left: 0;
+  padding-right: 0;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-color) 20%,
+    #fafafa 20%,
+    #fafafa 100%
+  );
+}
+
 .grid {
-    display: grid;
-    grid-template-rows: 
-      repeat(12, 9px);
-    grid-template-columns: 
-      repeat(7, 1fr);
-    grid-gap: 2.5px;
-  }
-  
-  .item{
-    &:nth-child(1) {
+  display: grid;
+  grid-template-rows: repeat(12, 9px);
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2.5px;
+}
+
+.grid__item {
+  &:nth-child(1) {
     background-image: url(../images/gallery/img1-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img1-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img1-mob-2x.png);
     }
     grid-row: 5/ 9;
   }
-  
   &:nth-child(2) {
     background-image: url(../images/gallery/img2-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img2-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img2-mob-2x.png);
     }
     grid-column: 2/ 3;
     grid-row: 4/ 8;
   }
-
-  
   &:nth-child(3) {
     background-image: url(../images/gallery/img3-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img3-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img3-mob-2x.png);
     }
     grid-column: 2 / 3;
     grid-row: 8 / 12;
   }
-  
   &:nth-child(4) {
     background-image: url(../images/gallery/img4-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img4-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img4-mob-2x.png);
     }
     grid-column: 3 / 5;
     grid-row: 1/9;
   }
-  
   &:nth-child(5) {
     background-image: url(../images/gallery/img5-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img5-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img5-mob-2x.png);
     }
     grid-column: 3 /3;
     grid-row: 9/ 13;
   }
   &:nth-child(6) {
     background-image: url(../images/gallery/img6-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img6-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img6-mob-2x.png);
     }
     grid-column: 5 / 6;
     grid-row: 4/ 8;
   }
   &:nth-child(7) {
     background-image: url(../images/gallery/img7-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img7-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img7-mob-2x.png);
     }
     grid-column: 5 / 6;
     grid-row: 8 / 12;
   }
   &:nth-child(8) {
     background-image: url(../images/gallery/img8-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img8-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img8-mob-2x.png);
     }
     grid-column: 6 / 7;
     grid-row: 3/ 7;
   }
   &:nth-child(9) {
     background-image: url(../images/gallery/img9-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img9-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img9-mob-2x.png);
     }
     grid-column: 6 / 7;
     grid-row: 7 / 11;
   }
   &:nth-child(10) {
     background-image: url(../images/gallery/img10-mob-1x.png);
-    @include retina{
-        background-image: url(../images/gallery/img10-mob-2x.png);
+    @include retina {
+      background-image: url(../images/gallery/img10-mob-2x.png);
     }
     grid-column: 7 /8;
     grid-row: 5 / 9;
   }
-  // transition: scale, 5500ms, cubic-bezier(0.075, 0.82, 0.165, 1);
-  // &:hover {
-  //  transform: scale(1.2);
-  // }
-}
-  .grid {
-    margin:0 auto;
-    width:320px;
+
+  @include transit();
+
+  &:hover {
+    transform: scale(1.2);
   }
-  
-  .grid > .item {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 8px;
-    }
+}
+.grid {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.grid > .grid__item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
