@@ -1,3 +1,10 @@
+@import './utills/variables';
+@import './utills/mixins';
+
+@import './base/reset';
+@import './base/body';
+@import './base/container';
+
 @import './common';
 @import './header';
 @import './hero';
@@ -8,3 +15,4 @@
 @import './customers';
 @import './contacts';
 @import './footer';
+
