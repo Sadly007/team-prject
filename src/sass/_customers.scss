@@ -13,37 +13,31 @@
 }
 
 .reviews__box {
-  padding-top: 74px;
-  // padding-bottom: 26px;
+  padding-top: 43px;
+  padding-bottom: 26px;
+
   background-color: #fafafa;
 }
 
-.reviews__gradient {
-  background: repeating-linear-gradient(
-    #e1e1e1 0px,
-    #e1e1e1 1px,
-    #fafafa 1px,
-    #fafafa 31px
-  );
-  z-index: 1;
-  max-width: 180px;
-  margin: 0 auto;
-  padding-bottom: 26px;
-}
-
-// .reviews__wrap-text {
-// }
-
 .reviews__text {
   position: relative;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
   color: var(--primary-text-color);
-  max-width: 157px;
+  width: 157px;
   margin: 0 auto;
+}
+
+.gradient {
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 30px,
+    #e1e1e1 31px
+  );
+  max-width: 180px;
 }
 
 .reviews__text::before {
