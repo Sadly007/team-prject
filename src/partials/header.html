@@ -12,11 +12,55 @@
             </svg> -->
         </button>
         <picture>
-<!-- -----------------------------------MODAL---------------------------------- -->
-    <!-- <div class="backdrop backdrop--is-hidden" data-modal>
+            <img srcset="./images/header/mob-elipse-1x.png 1x, ./images/header/mob-elipse-1x.png 2x" src="./images/header/mob-elipse-1x.png" alt="elipse" class="mob-elipse">
+        </picture>
+        <picture>
+            <img srcset="./images/header/ice-cream-mob-1x.png 1x, ./images/header/ice-cream-mob-1x.png 2x" src="./images/header/ice-cream-mob-1x.png" alt="icecream" class="mob-icecream">
+        </picture>
+
+        <div class="hero-content">
+            <h1 class="hero-title">ice cream made with <span> passion</span></h1>
+            <a href=""> <button class="products-button">Products</button></a>
+            <a href=""> <button class="how-made-button">How it's made?</button></a>
+        </div>
+
+
+
+
+    <!-- --------------------------MENU------------------------------------ -->
+    <div class="menu is-hidden">
+        <button type="button" class="close-btn">
+            <svg class="menu__icon-close" width="14" height="14">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="menu-nav">
+            <button type="button" class="menu-nav__buy-button buy-button" data-modal-open>Buy now <span
+                    class="buy-button__symbol">></span></button>
+            <ul class="menu-nav__list list">
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> Home</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> About us</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> How it’s made?</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> Our products</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- -----------------------------------MODAL---------------------------------- -->
+    <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-button" type="button" data-modal-close="">
-                <svg width="12px" height="12px">
+                <svg width="14px" height="14px">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
@@ -68,37 +112,9 @@
                 </div>
             </form>
         </div>
-    </div> -->
-
-    <!-- --------------------------MENU------------------------------------ -->
-    <div class="menu is-hidden">
-        <button type="button" class="close-btn">
-            <svg class="menu__icon-close" width="14" height="14">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <nav class="menu-nav">
-            <button type="button" class="menu-nav__buy-button buy-button">Buy now <span
-                    class="buy-button__symbol">></span></button>
-            <ul class="menu-nav__list list">
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link link"> Home</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link link"> About us</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link link"> How it’s made?</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link link"> Our products</a>
-                </li>
-                <li class="menu-nav__item">
-                    <a href="" class="menu-nav__link link"> Contact</a>
-                </li>
-            </ul>
-        </nav>
     </div>
+
+
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     </div>
