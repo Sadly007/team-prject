@@ -1,53 +1,19 @@
-
-    <header>
-        <div class="container header">
-            <h1 class="main-title">ice cream made with <span class="word">passion</span></h1>
-
-            <picture>
-                <img class="elipse"
-                    srcset="./images/header/mob-elipse-1x.png 1x"
-                    src="./images/header/mob-elipse-1x.png" alt="elipse" />
-            </picture>
-
-            <picture>
-                <img class="icecream"
-                    srcset="./images/header/ice-cream-mob-1x.png 1x,
-                    ./images/header/ice-cream-mob-2x.png 2x "
-                    src="./images/header/ice-cream-mob-1x.png" alt="icecream" />
-            </picture>
-            <picture>
-                <img class="logo" srcset="./images/header/mob-logo.png 1x"
-                    src="./images/header/mob-logo.png" alt="logo" />
-            </picture>
-
-
-
-            <a href="#products" class="link"><button class="button-1" type="button">Products</button></a>
-            <a href="" class="link"><button class="button-2" type="button"> How it's made?</button></a>
-            <div class="menu-wrapper" data-menu>
-                <button type="button" class="buy-button " data-modal-open>Buy now<span class="mnemo"> > </span></button>
-                <nav>
-                    <ul class="menu-nav list">
-                        <li class="menu-nav__item "><a href="" class="menu-nav__link menu-nav__link--selected link">Home</a></li>
-                        <li class="menu-nav__item"><a href="" class="menu-nav__link link">About us</a></li>
-                        <li class="menu-nav__item"><a href="" class="menu-nav__link link">How it's made?</a></li>
-                        <li class="menu-nav__item"><a href="" class="menu-nav__link link">Our products</a></li>
-                        <li class="menu-nav__item"><a href="" class="menu-nav__link link">Contacts</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-            <button class="menu-button" type="button" data-menu-button>
-                <svg class="menu-icon" width="20px" height="16px">
-                    <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
-                    <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-
-        </div>
-    </header>
-    <div class="backdrop backdrop--is-hidden" data-modal>
+<header class="header">
+    <div class="container header-container">
+        <picture>
+            <img src="./images/header/mob-logo.png" alt="mob-logo" class="mob-logo">
+        </picture>
+        <button type="button" class="header-btn">
+            <svg class="header-menu" width="20px" height="16px">
+                <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
+            </svg>
+            <!-- <svg class="header-close" width="20px" height="16px">
+                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+            </svg> -->
+        </button>
+        <picture>
+<!-- -----------------------------------MODAL---------------------------------- -->
+    <!-- <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-button" type="button" data-modal-close="">
                 <svg width="12px" height="12px">
@@ -57,7 +23,7 @@
             <form>
                 <div class="modal-wrapper">
                     <h2 class="modal-title">Choose your ice cream</h2>
-
+    
                     <div class="form-field">
                         <label class="label" for="products">Choose product</label>
                         <select class="input-type" name="products" id="products">
@@ -78,30 +44,63 @@
                             </optgroup>
                         </select>
                     </div>
-
+    
                     <div class="form-field">
                         <label class="label" for="name">Name</label>
                         <input class="input-type" type="text" id="name" />
                     </div>
-
+    
                     <div class="form-field">
                         <label class="label" for="tel">Phone number</label>
                         <input class="input-type" type="tel" id="tel" />
                     </div>
-
+    
                     <div class="form-field">
                         <label class="label" for="email">Email</label>
                         <input class="input-type" type="email" id="email" />
                     </div>
-
+    
                     <label class="agreements"><input class="input-agreements" type="checkbox" />by clicking the button,
                         you agree to the public offer agreement and privacy
                         policy</label>
-
+    
                     <button class="ordered-button" type="submit">Order</button>
                 </div>
             </form>
         </div>
+    </div> -->
+
+    <!-- --------------------------MENU------------------------------------ -->
+    <div class="menu is-hidden">
+        <button type="button" class="close-btn">
+            <svg class="menu__icon-close" width="14" height="14">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="menu-nav">
+            <button type="button" class="menu-nav__buy-button buy-button">Buy now <span
+                    class="buy-button__symbol">></span></button>
+            <ul class="menu-nav__list list">
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> Home</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> About us</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> How it’s made?</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> Our products</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    </div>
+</header>
+ 

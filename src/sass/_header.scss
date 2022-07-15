@@ -1,333 +1,68 @@
-.header {
-    background-color: #FFB8CA;
-    height: 502px;
+.header-container{
     position: relative;
+
+    background-color: var(--accent-background-color);
+    height: 58px;
     overflow: hidden;
-
 }
-
-.elipse {
-    position: absolute;
-    top: 83px;
-    left: 36px;
-
-}
-
-.logo {
-    position: absolute;
-    top: 8px;
-    left: 20px;
+.mob-logo{
+    display: block;
+    padding-top: 8px;
     width: 199px;
 }
-
-.burger {
+.header-btn,
+.close-btn{
     position: absolute;
     top: 27px;
     right: 20px;
-}
 
-.icecream {
+    border-style: none;
+    background-color: transparent;
+}
+.menu.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.menu{
     position: absolute;
-    bottom: 0;
-    right: 32px;
-    z-index: 1;
-
-    width: 171px;
-}
-
-.main-title {
-    position: absolute;
-    left: 20px;
-    top: 194px;
-
-    font-family: var(--secondary-font-family);
-    @include font(26px, 400, 1.15);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    width: 218px;
-    color: var(--white-color);
-    z-index: 2;
-
-}
-
-.word {
-    font-size: 46px;
-    color: var(--accent-text-color);
-    line-height: 0.95;
-}
-
-.button-1 {
-    position: absolute;
-    left: 20px;
-    top: 330px;
-    cursor: pointer;
-
-    @include font(8px, null, 1.25);
-
-    height: 24px;
-    width: 62px;
-    border-color: transparent;
-    border-radius: 20px;
-    background-color: var(--accent-text-color);
-    color: var(--white-color);
-    &:hover,
-    &:focus{
-        background-color: var(--white-color);
-        color: var(--accent-text-color);
-    }
-
-
-}
-
-.button-2 {
-    position: absolute;
-    left: 92px;
-    top: 330px;
-    z-index: 5;
-
-    @include font(8px,null,1.25);
-
-    height: 24px;
-    width: 83px;
-    border-color: transparent;
-    border-radius: 20px;
-    background-color: var(--white-color);
-    color: var(--accent-text-color);
-    cursor: pointer;
-}
-
-.menu-wrapper {
-    position: absolute;
-    top: 0;
     right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #E17992;
-    z-index: 400;
-    transform: translateX(320px);
-    transition-property: transform;
-    transition-duration: 1.8s;
-    animation-timing-function: ease;
+    top: 0;
+    background-color: var(--menu-background-color);
 
-}
-@media screen and (min-width:769px) {
-    .menu-wrapper {
-        width: 35%;
-        transform: translateX(769px);
-        transition-duration: 2s;
-        animation-timing-function: linear;
+    @include font(14px,700,1.28);
+    color: var(--white-color);
+    width: 250px;
+    height: 100vh;
+    transform: translateX(0);
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    animation-timing-function: ease;    
+    &.is-hidden{
+    transform: translateX(250px);
     }
 }
-
-
-.menu-wrapper.is-open {
-    transform: translateX(0px);
-}
-
-.buy-button {
-    display: block;
-    @include font (21px,700,1.31);
-    
-    background-color: var(--white-color);
+.menu-nav__buy-button{
+    @include font(16px,700,1.31);
     color: var(--accent-text-color);
-    border-color: transparent;
-    border-radius: 22px;
-    cursor: pointer;
-
-    max-width: 186px;
+    padding: 0;
+    margin: 60px 0 19px 20px;
+    max-width: 209px;
     width: 100%;
     height: 44px;
-
-    margin-top: 58px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    border-style: none;
+    border-radius: 22px;
 }
-@media screen and (min-width:769px) {
-    .buy-button {
-        margin-left: 40px;
-    }
-}
-
-
-
-.mnemo {
-
-    padding-left: 15px;
-}
-
-.menu-nav {
-    margin-top: 19px;
+.buy-button__symbol{
+    padding-top: 2px;
 }
 
 .menu-nav__item {
     padding: 12px 0px 12px 20px;
     border-top: 1px solid #E18298;
 }
-
 .menu-nav__item:nth-last-child(1) {
     border-bottom: 1px solid #E18298;
 }
 
-.menu-nav__link {
-    @include font(18px,700, 1.29);
-    color: var(--white-color);
-}
-.menu-nav__link--selected {
-    color: var(--accent-text-color);
-}
 
 
-
-.menu-button {
-    position: absolute;
-    top: 27px;
-    right: 20px;
-    background-color: transparent;
-    border-color: transparent;
-    z-index: 500;
-    cursor: pointer;
-}
-
-.icon-cross {
-    display: none;
-
-}
-
-
-
-.menu-button.is-open .icon-cross {
-    display: block;
-}
-
-
-
-.menu-button.is-open .icon-burger {
-    display: none;
-}
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffffbe;
-    z-index: 600;
-    padding: 20px;
-    opacity: 1;
-}
-
-.backdrop--is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
-
-.modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-    background-color: #E17992;
-    border-radius: 8px;
-}
-
-
-
-.modal-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 30px;
-
-
-}
-
-.modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-
-    background-color: transparent;
-    border: none;
-}
-
-.modal-title {
-    font-size: 19px;
-    color: #FFFFFF;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.form-field {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-
-
-.input-type {
-    outline: none;
-    border-radius: 4px;
-    border-color: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-type:hover {
-    border-color: #F36072;
-}
-
-.input-type:focus {
-    border-color: #F36072;
-}
-
-.label {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 4px;
-    color: var(--white-color);
-}
-
-.agreements {
-    font-size: 13px;
-    line-height: 1.15;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    color: var(--white-color);
-    margin-top: 10px;
-
-}
-
-.input-agreements {
-    margin-right: 3px;
-    outline: none;
-}
-
-.ordered-button {
-    width: 120px;
-    height: 25px;
-    border-radius: 6px;
-    border-color: transparent;
-    align-self: center;
-    font-family: 'DM Sans';
-    cursor: pointer;
-    background-color: #F36072;
-    color: var(--white-color);
-    border: 1px solid var(--white-color);
-    margin-top: 10px;
-    outline: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ordered-button:hover,
-.ordered-button:focus {
-    background-color: #FFFFFF;
-    border-color: #F36072;
-    color: #F36072;
-
-}
