@@ -15,9 +15,6 @@
 .reviews__box {
   padding-top: 43px;
   padding-bottom: 26px;
-  display: flex;
-  justify-content: center;
-  //   padding: 43px 58px 26px 65px;
   background-color: #fafafa;
 }
 
@@ -28,6 +25,12 @@
     #fafafa 1px,
     #fafafa 31px
   );
+  z-index: 1;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.reviews__wrap-text {
 }
 
 .reviews__text {
@@ -37,4 +40,5 @@
   text-align: center;
   color: var(--primary-text-color);
   max-width: 157px;
+  margin: 0 auto;
 }
