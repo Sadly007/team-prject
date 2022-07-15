@@ -1,30 +1,29 @@
 .products {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
-  margin-top: 60px;
+
   &__pre-header {
     display: flex;
-    font-family: 'Titan One';
+    font-family: var(--secondary-font-family);
     font-style: normal;
     @include font(18px, 400, 1.17);
     text-transform: uppercase;
 
-    color: #ffa5ba;
+    color: var(--secondary-accent-color);
     justify-content: center;
     margin-bottom: 15px;
+
+    margin-top: 60px;
   }
   &__header {
-    font-family: 'Titan One';
+    font-family: var(--secondary-font-family);
     font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.15;
+    @include font(34px, 400, 1.15);
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #d41443;
+    color: var(--accent-text-color);
     margin-bottom: 148px;
   }
   &__img-pink {
@@ -52,7 +51,8 @@
     left: 0;
   }
   &__pink {
-    background: #ffb8ca;
+    width: 100%;
+    background: var(--accent-background-color);
     border-radius: 24px;
     padding: 160px 40px 40px 40px;
     position: relative;
@@ -71,9 +71,11 @@
     border-radius: 24px;
     padding: 160px 40px 40px 40px;
     position: relative;
+
+    margin-bottom: 60px;
   }
   &__item {
-    font-family: 'Titan One';
+    font-family: var(--secondary-font-family);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -83,11 +85,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #ffffff;
+    color: var(--white-color);
     margin-bottom: 64px;
   }
   &__text {
-    font-family: 'DM Sans';
+    font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -95,30 +97,51 @@
 
     letter-spacing: 0.04em;
 
-    color: #ffffff;
+    color: var(--white-color);
     text-align: center;
     margin-bottom: 32px;
   }
   &__icon {
-    fill: red;
+    fill: var(--accent-text-color);
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #ffffff;
+    background: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
   }
 }
-.products__item::after {
-  content: '';
+span {
+  position: relative;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  font-size: 0;
+  margin-left: 100px;
+  bottom: 32px;
+  padding: 4px;
+}
+
+span:before {
   position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  left: 140px;
-  bottom: 270px;
-  background-repeat: repeat-x;
+  left: -20px;
+  top: 0;
+  content: '';
+
+  background-color: var(--background-color);
+  border-radius: 5px;
+  font-size: 0;
+  padding: 4px;
+}
+
+span:after {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  content: '';
+  background-color: var(--white-color);
+  border-radius: 5px;
+  font-size: 0;
+  padding: 4px;
 }
