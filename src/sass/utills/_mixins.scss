@@ -10,7 +10,7 @@
   margin-bottom: mb;
 }
   //Добавлять calc отдельно//
-}
+
 @mixin grid-item($ml: 32px, $mt: 32px) {
     margin-left: $ml;
     margin-top: $mt;
