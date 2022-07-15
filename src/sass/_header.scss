@@ -61,6 +61,7 @@
     position: absolute;
     left: 20px;
     top: 330px;
+    cursor: pointer;
 
     @include font(8px, null, 1.25);
 
@@ -70,6 +71,11 @@
     border-radius: 20px;
     background-color: var(--accent-text-color);
     color: var(--white-color);
+    &:hover,
+    &:focus{
+        background-color: var(--white-color);
+        color: var(--accent-text-color);
+    }
 
 
 }
@@ -88,6 +94,7 @@
     border-radius: 20px;
     background-color: var(--white-color);
     color: var(--accent-text-color);
+    cursor: pointer;
 }
 
 .menu-wrapper {
@@ -163,6 +170,9 @@
 .menu-nav__link {
     @include font(18px,700, 1.29);
     color: var(--white-color);
+}
+.menu-nav__link--selected {
+    color: var(--accent-text-color);
 }
 
 
