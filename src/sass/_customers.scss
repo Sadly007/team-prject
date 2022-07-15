@@ -1,0 +1,40 @@
+.container--paddings {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.reviews__foto {
+  width: 85px;
+  height: 85px;
+  border-radius: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.reviews__box {
+  padding-top: 43px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  //   padding: 43px 58px 26px 65px;
+  background-color: #fafafa;
+}
+
+.reviews__gradient {
+  background: repeating-linear-gradient(
+    #e1e1e1 0px,
+    #e1e1e1 1px,
+    #fafafa 1px,
+    #fafafa 31px
+  );
+}
+
+.reviews__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: var(--primary-text-color);
+  max-width: 157px;
+}
