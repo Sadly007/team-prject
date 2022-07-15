@@ -60,7 +60,7 @@
     }
 }
 
-.advantages__number::before {
+.advantages__item::before {
     content: " ";
     display: block;
     background-repeat: no-repeat;
@@ -71,26 +71,75 @@
     height: 50px;
 }
 
-.advantages__number--adder::before {
+.advantages__item--adder::before {
     background-image: url(../images/advantages/cow-udder-mob-1x.png);
     @include retina {
         background-image: url(../images/advantages/cow-udder-mob-2x.png);
     }
 }
 
-.advantages__number--apples::before {
+.advantages__item--apples::before {
     background-image: url(../images/advantages/apples-mob-1x.png);
     @include retina {
         background-image: url(../images/advantages/apples-mob-2x.png);
     }
 }
 
-.advantages__number--heart::before {
+.advantages__item--heart::before {
     background-image: url(../images/advantages/heart-mob-1x.png);
     @include retina {
         background-image: url(../images/advantages/heart-mob-2x.png);
     }
 }
 
+.advantages__number {
+    display: inline-block;
+    animation-name: rotation, scale;
+    animation-duration: 4s;
+    animation-timing-function: var(--time-function);
+    animation-iteration-count: infinite;
+}
 
+@keyframes rotation {
+    0% {
+        transform: rotateZ(0deg) scale(1);
+    }
 
+    25% {
+        transform: rotateZ(20deg) scale(0.8);
+    }
+
+    50% {
+        transform: rotateZ(0deg) scale(1);
+    }
+
+    75% {
+        transform: rotateZ(-20deg) scale(0.8);
+    }
+
+    100% {
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+// @keyframes scale {
+//     0% {
+//         transform: scale(1);
+//     }
+
+//     25% {
+//         transform: scale(0.8);
+//     }
+
+//     50% {
+//         transform: scale(1);
+//     }
+
+//     75% {
+//         transform: scale(0.8);
+//     }
+
+//     100% {
+//         transform: scale(1);
+//     }
+// }
