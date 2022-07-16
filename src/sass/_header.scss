@@ -34,6 +34,7 @@
     color: var(--white-color);
     width: 250px;
     height: 100vh;
+    overflow: auto;
     transform: translateX(0);
     transition-property: transform, opacity;
     transition-duration: 500ms;
