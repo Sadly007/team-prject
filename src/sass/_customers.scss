@@ -15,7 +15,6 @@
 .reviews__box {
   padding-top: 43px;
   padding-bottom: 26px;
-
   background-color: #fafafa;
 }
 
@@ -28,6 +27,9 @@
   color: var(--primary-text-color);
   max-width: 157px;
   margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: content-box;
 }
 
 .gradient {
@@ -42,7 +44,7 @@
 .reviews__text::before {
   position: absolute;
   top: -15px;
-  left: -13px;
+  left: -2px;
   content: '';
   display: inline-block;
   width: 54px;
