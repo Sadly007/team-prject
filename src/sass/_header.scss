@@ -28,6 +28,7 @@
     right: 0;
     top: 0;
     background-color: var(--menu-background-color);
+    z-index: 3;
 
     @include font(14px,700,1.28);
     color: var(--white-color);
