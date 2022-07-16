@@ -59,6 +59,9 @@
 .menu-nav__item {
     padding: 12px 0px 12px 20px;
     border-top: 1px solid #E18298;
+    &:first-child{
+        color: var(--accent-text-color);
+    }
 }
 .menu-nav__item:nth-last-child(1) {
     border-bottom: 1px solid #E18298;
@@ -171,7 +174,7 @@
 
 .modal-title {
     font-size: 19px;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 5px;
     text-align: center;
 }
@@ -189,15 +192,12 @@
     border-radius: 4px;
     border-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        border-color: var(--modal-accent-color);
+    }
 }
 
-.input-type:hover {
-    border-color: #F36072;
-}
-
-.input-type:focus {
-    border-color: #F36072;
-}
 
 .label {
     font-size: 14px;
@@ -229,18 +229,16 @@
     align-self: center;
     font-family: 'DM Sans';
     cursor: pointer;
-    background-color: #F36072;
+    background-color: var(--modal-accent-color);
     color: var(--white-color);
     border: 1px solid var(--white-color);
     margin-top: 10px;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ordered-button:hover,
-.ordered-button:focus {
+    &:hover,
+    &:focus{
     background-color: #FFFFFF;
-    border-color: #F36072;
-    color: #F36072;
-
+    border-color: var(--modal-accent-color);
+    color: var(--modal-accent-color);
+    }
 }
