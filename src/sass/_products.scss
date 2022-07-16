@@ -113,7 +113,7 @@
     margin: 0 auto;
   }
 }
-span {
+.span {
   position: relative;
   background-color: var(--white-color);
   border-radius: 5px;
@@ -123,7 +123,7 @@ span {
   padding: 4px;
 }
 
-span:before {
+.span:before {
   position: absolute;
   left: -20px;
   top: 0;
@@ -135,7 +135,7 @@ span:before {
   padding: 4px;
 }
 
-span:after {
+.span:after {
   position: absolute;
   left: 20px;
   top: 0;

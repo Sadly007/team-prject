@@ -6,7 +6,7 @@
     line-height: 1.67;
     text-transform: uppercase;
 
-    color: var(--primery-pink-color);
+    color: var(--secondary-accent-color);
 
     width: 232px;
 
@@ -36,7 +36,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: var(--primery-red-color);
+    color: var(--accent-text-color);
 
     width: 200px;
     padding-top: 16px;
@@ -83,9 +83,6 @@
 //     margin-left: 0px;
 // }
 
-[href="tell:+61 (0) 383 766 284"] {
-    color: var(--accent-text-color);
-}
 
 .tell-text {
     font-style: normal;
@@ -95,7 +92,7 @@
     /* or 22px */
 
     text-align: right;
-    color: var(--primery-text-color);
+    color: var(--primary-text-color);
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         font-size: 14px;
@@ -163,7 +160,7 @@
     width: 32px;
     height: 32px;
     border-radius:  50px;
-    background-color: var(--primery-icon-bg-color);
+    background-color: var(--primary-icon-bg-color);
 
     margin-left: 28.32px;
 
