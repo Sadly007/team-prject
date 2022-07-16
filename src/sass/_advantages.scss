@@ -94,31 +94,54 @@
 
 .advantages__number {
     display: inline-block;
-    animation-name: rotation, scale;
-    animation-duration: 2s;
-    animation-timing-function: var(--time-function);
-    animation-iteration-count: 3;
-}
-.number-animation {
+    animation-name: rotation;
+    animation-duration: 20s;  
+    animation-timing-function: cubic-bezier(.2, .88, .82, .15);
+    animation-iteration-count: infinite;
 @keyframes rotation {
         0% {
             transform: rotateZ(0deg) scale(1);
         }
-
-        25% {
+        3% {
             transform: rotateZ(20deg) scale(0.8);
         }
-
-        50% {
+        6% {
             transform: rotateZ(0deg) scale(1);
         }
-
-        75% {
+        9% {
             transform: rotateZ(-20deg) scale(0.8);
         }
-
+        12% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        15% {
+            transform: rotateZ(20deg) scale(0.8);
+        }
+        18% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        21% {
+            transform: rotateZ(-20deg) scale(0.8);
+        }
+        24% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        88% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        91% {
+            transform: rotateZ(20deg) scale(0.8);
+        }
+        94% {
+            transform: rotateZ(0deg) scale(1);
+        }
+        97% {
+            transform: rotateZ(-20deg) scale(0.8);
+        }
         100% {
             transform: rotateZ(0deg) scale(1);
         }
     }
 }
+
+
