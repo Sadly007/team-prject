@@ -4,14 +4,21 @@
     background-color: var(--accent-background-color);
     height: 502px;
     overflow: hidden;
+    @include tablet{
+        height: 416px;
+    }
 }
 .mob-logo{
     display: block;
-    padding-top: 8px;
+    margin-top: 8px;
     width: 199px;
+    @include tablet{
+        margin-top: 32px;
+    }
 }
 .header-btn,
 .close-btn{
+    padding: 0;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -19,10 +26,17 @@
     border-style: none;
     background-color: transparent;
 }
-.menu.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+.close-btn{
+right: 32px;
 }
+.header-btn{
+    @include tablet{
+        z-index: 1;
+        top: 46px;
+        right: 224px;
+    }
+}
+
 .menu{
     position: absolute;
     right: 0;
@@ -41,18 +55,39 @@
     animation-timing-function: ease;    
     &.is-hidden{
     transform: translateX(250px);
+    opacity: 0;
+    pointer-events: none;
     }
 }
 .menu-nav__buy-button{
-    @include font(16px,700,1.31);
-    color: var(--accent-text-color);
-    padding: 0;
-    margin: 60px 0 19px 20px;
-    max-width: 209px;
-    width: 100%;
-    height: 44px;
-    border-style: none;
-    border-radius: 22px;
+margin: 60px 0 19px 20px;
+}
+.header__buy-button{
+    display: none;
+    @include tablet{
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        max-width: 160px;
+    }
+}
+.menu-nav__buy-button{
+            max-width: 209px;
+            @include tablet{
+                max-width: 186px;
+            }
+}
+.buy-button{
+        @include font(16px, 700, 1.31);
+            color: var(--accent-text-color);
+            padding: 0;
+
+            width: 100%;
+            height: 44px;
+            border-style: none;
+            border-radius: 22px;
+
 }
 .buy-button__symbol{
     padding-top: 2px;
@@ -74,13 +109,57 @@
     left: 36px;
     width:346px;
     height:344px;
+    @include tablet{
+        display: none;
+    }
+
 }
+
 .mob-icecream{
     position: absolute;
     bottom: 0;
     right: 32px;
     width: 171px;
     height: 410px;
+    @include tablet{
+    width: 143px;
+    height: 336px;
+    left: 332px;
+    }
+}
+.tab-elipse {
+    position: absolute;
+    top: 43px;
+    right: 185px;
+    width: 335px;
+    height: 333px;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+}
+.tab-milk{
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+
+    width: 152px;
+    height: 154px;
+    @media screen and(max-width:767px) {
+        display: none;
+    }
+}
+.tab-girl{
+    position: absolute;
+    bottom: 1px;
+    right: 32px;
+width: 190px;
+height: 150px;
+
+    @media screen and(max-width:767px) {
+     display: none;
+    }
 }
 
 // -------------------------------HERO-----------------------------------
@@ -90,6 +169,10 @@
     left: 20px;
     max-width: 218px;
     width: 100%;
+    @include tablet{
+    top: 102px;
+    left:32px;
+    }
 }
 .hero-title{
     @include font (26px, 400, 1.14);
