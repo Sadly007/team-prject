@@ -2,11 +2,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: var(--background-color);
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include tablet {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding-top: 40px;
         padding-bottom: 120px;
     }
@@ -17,20 +17,20 @@
         letter-spacing: 0.04em;
         color: var(--accent-text-color);
         margin-bottom: 20px;
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include tablet {
             @include font (48px, 400, 1.14);
         }
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             @include font (58px, 400, 1.14);
         }
     }
 
     &__text {
         @include font(12px, 700, 1.7);
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include tablet {
                 @include font (14px, 700, 1.74);
             }
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             @include font (16px, 700, 1.76);
         }
 
@@ -38,10 +38,10 @@
 
     &__list {
         @include grid-wrap;
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include tablet {
             @include grid-wrap (flex, -20px, -20px, wrap);
         }
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             @include grid-wrap (flex, -125px, -125px, wrap);
         }
     }
@@ -49,11 +49,11 @@
     &__item {
         @include grid-item;
         max-width: 230px;
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @include tablet {
             @include grid-item (20px, 20px);
             max-width: 162px;
         }
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             @include grid-item (125px, 125px);
             max-width: 265px;
         }
