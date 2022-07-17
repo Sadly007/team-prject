@@ -488,11 +488,11 @@
     }
   }
 
-  transition: background-image 1500ms var(--time-function),
-    transform 500ms var(--time-function);
+  transition: background-image 1000ms var(--time-function),
+    transform 1000ms var(--time-function);
   &:hover {
-    cursor: url(../images/gallery/ice-cream.png), pointer;
-    transform: scale(1.2);
+    transform: scale(1.5);
+    z-index: 1;
   }
 }
 .grid {

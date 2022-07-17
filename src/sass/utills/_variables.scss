@@ -1,22 +1,29 @@
 :root {
   --primary-font-family: 'DM Sans', sans-serif;
   --secondary-font-family: 'Titan One', sans-serif;
-
-  --primary-text-color: #000000;
-  --secondary-text-color: #907e82;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --time-duration: 250ms;
   --white-color: #ffffff;
+  --primary-text-color: #000000;
+  --background-color: #fff5f6;
+  // rose theme #fea5bb
+  --secondary-text-color: #907e82;
   --accent-text-color: #d41443;
   --accent-background-color: #ffb8ca;
   --secondary-accent-color: #ffa5ba;
   --primary-icon-bg-color: #fea5bb;
-  --background-color: #fff5f6;
-  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --time-duration: 250ms;
+
+  // green theme #A5FEBB
   // --secondary-text-color: #7e9082;
-  // --white-color: #ffffff;
   // --accent-text-color: #14d443;
   // --accent-background-color: #b8ffca;
   // --secondary-accent-color: #a5ffba;
-  // --primary-icon-bg-color: #A5FEBB;
-  // --background-color: #f5fff6;
+  // --primary-icon-bg-color: #a5febb;
+
+  // coffe theme #f0d1a5;
+  // --secondary-text-color: #9e8c72;
+  // --accent-text-color: #8a6d45;
+  // --accent-background-color: #f2d6ae;
+  // --secondary-accent-color: #f2cb94;
+  // --primary-icon-bg-color: #f2c585;
 }
