@@ -1,4 +1,8 @@
 .about {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
     background-color: var(--background-color);
     padding-top: 60px;
     &__label {
@@ -22,17 +26,60 @@
         margin-bottom: 40px;
     }
     &__wrap {
+        // position: relative;
+        // top: 0;
+        // left: 0;
         width: 100%;
+        @include tablet {
+            display: flex;
+        }
+        
+
+    }
+    &__background {
+        position: absolute;
+        top: 601px;
+        left: 0;
+        display: inline;
+        z-index: 2;
+        width: 100%;
+        height: 133px;
         background-image: url(../images/about/milk-mob-1x.png);
+        @include retina {
+            background-image: url(../images/about/milk-mob-2x.png);
+        }
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto 133px;
-        background-position: 0 390px;
+        // background-position: 0 390px;
+        @include tablet {
+            background-image: none;
+        }
+        @include desktop {
+            top: 167px;
+            height: 521px;
+            background-image: url(../images/about/milk-desk-1x.png);
+            background-size: auto 521px;
+            // background-position: 0 236px;
+            @include retina {
+                background-image: url(../images/about/milk-desk-2x.png);
+            }
+        }
+    }
+    &__wrap-text {
+        @include tablet {
+            margin-left: 32px;
+        }
     }
     &__text {
         width: 220px;
         @include font (12px, 500, 1.62);
         margin-bottom: 22px;
+        @include tablet {
+            width: 334px;
+            @include font (14px, 500, 1.76);
+            letter-spacing: 0.04em;
+        }
     }
     &__text--change {
         margin-bottom: 20px;
