@@ -85,6 +85,18 @@ right: 32px;
 }
 
 
+.home-anchor{
+    z-index: 5;
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    transform: rotate(-90deg);
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--accent-background-color);
+    opacity: 0.8;
+    fill: var(--accent-text-color);
+}
 
 // --------------------------------PICTURES--------------------------------------------------
 
