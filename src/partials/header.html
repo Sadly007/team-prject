@@ -1,29 +1,29 @@
 <header class="header" id="header-anchor">
+
+
     <div class="container header-container">
 
-
-
         <!-- -------------------------------PICTURES--------------------------------------- -->
-        <picture class="header-elipse">
+        <picture >
             <source srcset="./images/header/desktop-elipse-1x.png, ./images/header/desktop-elipse-2x.png 2x" media="(min-width:1200px)" type="image/png">
             <source srcset="./images/header/tab-elipse-1x.png, ./images/header/tab-elipse-2x.png 2x" media="(min-width:320px)" type="image/png">
-            <img src="./images/header/tab-elipse-1x.png" alt="elipse"  >
+            <img src="./images/header/tab-elipse-1x.png" alt="elipse"  class="header-elipse elipse-scale">
         </picture>
-        <picture class="header-icecream">
+        <picture >
             <source srcset="./images/header/desktop-icecream-1x.png 1x, ./images/header/desktop-icecream-2x.png 2x" media="(min-width:1200px)" type="image/png">
             <source srcset="./images/header/tab-icecream-1x.png 1x, ./images/header/tab-icecream-2x.png 2x" media="(min-width:768px)" type="image/png">
             <source srcset="./images/header/ice-cream-mob-1x.png 1x, ./images/header/ice-cream-mob-2x.png 2x" media="(min-width:320px)" type="image/png">
-            <img src="./images/header/ice-cream-mob-1x.png" alt="icecream" class="" >
+            <img src="./images/header/ice-cream-mob-1x.png" alt="icecream" class="header-icecream icecream-twik icecream-scale">
         </picture>
-        <picture class="header-milk">
+        <picture >
              <source srcset="./images/header/desktop-milk-1x.png 1x, ./images/header/desktop-milk-2x.png 2x" media="(min-width:1200px)" type="image/png">
             <source srcset="./images/header/tab-milk-1x.png 1x, ./images/header/tab-milk-2x.png 2x" media="(min-width:768px)" type="image/png">
-            <img src="./images/header/tab-milk-1x.png" alt="milk" >
+            <img src="./images/header/tab-milk-1x.png" alt="milk" class="header-milk">
         </picture>
-        <picture class="header-girl shake-top" > 
+        <picture class="shake-horizontal" > 
             <source srcset="./images/header/desktop-girl-1x.png 1x, ./images/header/desktop-girl-2x.png 2x" media="(min-width:1200px)">
             <source srcset="./images/header/tab-girl-1x.png 1x, ./images/header/tab-girl-2x.png 2x" media="(min-width:768px)" type="image/png">
-            <img src="./images/header/tab-girl-1x.png" alt="girl" >
+            <img src="./images/header/tab-girl-1x.png" alt="girl" class="header-girl shake-horizontal">
         </picture>
         <a href="#header-anchor">
         <svg class="home-anchor" width="30px" height="30px">
@@ -35,7 +35,8 @@
 
         <div class="header-box">
             <picture>
-                <img src="./images/header/mob-logo.png" alt="mob-logo" class="mob-logo">
+                <source srcset="./images/header/logo-1x.png 1x, ./images/header/logo-2x.png 2x" type="image/png">
+                <img src="./images/header/logo-1x.png" alt="mob-logo" class="mob-logo">
             </picture>
             <nav class="menu-nav header__menu-nav">
         
@@ -62,13 +63,15 @@
                     <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
                 </svg>
                 <button type="button" class="header__buy-button buy-button" data-modal-open>Buy now <span
-                        class="buy-button__symbol"></span></button>
+                        class="buy-button__symbol"> <svg class="buy-button__svg" width="6" height="10">
+                            <use href="./images/icons.svg#icon-arrow1"></use>
+                        </svg></span></button>
             </button>
         </div>
         <div class="hero-content">
             <h1 class="hero-title">ice cream made with <span> passion</span></h1>
-            <a href="#products-anchor"> <button class="products-button">Products</button></a>
-            <a href="#about-anchor"> <button class="how-made-button">How it's made?</button></a>
+            <a href="#products-anchor"> <button class="products-hero-button">Products</button></a>
+            <a href="#about-anchor"> <button class="how-made-hero-button">How it's made?</button></a>
         </div>
         <div class="hero-text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
@@ -106,7 +109,9 @@
             </svg>
         </button>
         <button type="button" class="menu-nav__buy-button buy-button" data-modal-open2>Buy now <span
-                    class="buy-button__symbol">></span>
+                    class="buy-button__symbol"><svg class="buy-button__svg" width="6" height="10">
+                        <use href="./images/icons.svg#icon-arrow1"></use>
+                    </svg></span>
         </button>
         <nav class="menu-nav">
 
@@ -130,62 +135,62 @@
         </nav>
     </div>
     <!-- -----------------------------------MODAL---------------------------------- -->
+    
     <div class="backdrop backdrop--is-hidden" data-modal>
-            <div class="modal">
-                <button class="modal-close-button" type="button" data-modal-close="">
-                    <svg width="14px" height="14px">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <form>
-                    <div class="modal-wrapper">
-                        <h2 class="modal-title">Choose your ice cream</h2>
-        
-                        <div class="form-field">
-                            <label class="label" for="products">Choose product</label>
-                            <select class="input-type" name="products" id="products">
-                                <optgroup label="Ice Cream">
-                                    <option value="str">Strawberry</option>
-                                    <option value="choc">Chocolate</option>
-                                    <option value="jam">With jam</option>
-                                </optgroup>
-                                <optgroup label="Ice Coffee">
-                                    <option value="chm">Chocholate and mint</option>
-                                    <option value="crm">Caramel</option>
-                                    <option value="mch">Mocha</option>
-                                </optgroup>
-                                <optgroup label="Milkshakes">
-                                    <option value="pch">Peach</option>
-                                    <option value="rsp">Raspberry</option>
-                                    <option value="mng">Mango</option>
-                                </optgroup>
-                            </select>
-                        </div>
-        
-                        <div class="form-field">
-                            <label class="label" for="name">Name</label>
-                            <input class="input-type" type="text" id="name" />
-                        </div>
-        
-                        <div class="form-field">
-                            <label class="label" for="tel">Phone number</label>
-                            <input class="input-type" type="tel" id="tel" />
-                        </div>
-        
-                        <div class="form-field">
-                            <label class="label" for="email">Email</label>
-                            <input class="input-type" type="email" id="email" />
-                        </div>
-        
-                        <label class="agreements"><input class="input-agreements" type="checkbox" />by clicking the button,
-                            you agree to the public offer agreement and privacy
-                            policy</label>
-        
-                        <button class="ordered-button" type="submit">Order</button>
+        <div class="modal">
+            <button class="modal-close-button" type="button" data-modal-close="">
+                <svg width="12px" height="12px">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <form>
+                <div class="modal-wrapper">
+                    <h2 class="modal-title">Choose your ice cream</h2>
+    
+                    <div class="form-field">
+                        <label class="label" for="products">Choose product</label>
+                        <select class="input-type" name="products" id="products">
+                            <optgroup label="Ice Cream">
+                                <option value="str">Strawberry</option>
+                                <option value="choc">Chocolate</option>
+                                <option value="jam">With jam</option>
+                            </optgroup>
+                            <optgroup label="Ice Coffee">
+                                <option value="chm">Chocholate and mint</option>
+                                <option value="crm">Caramel</option>
+                                <option value="mch">Mocha</option>
+                            </optgroup>
+                            <optgroup label="Milkshakes">
+                                <option value="pch">Peach</option>
+                                <option value="rsp">Raspberry</option>
+                                <option value="mng">Mango</option>
+                            </optgroup>
+                        </select>
                     </div>
-                </form>
-            </div>
-    </div>
+    
+                    <div class="form-field">
+                        <label class="label" for="name">Name</label>
+                        <input class="input-type" type="text" id="name" />
+                    </div>
+    
+                    <div class="form-field">
+                        <label class="label" for="tel">Phone number</label>
+                        <input class="input-type" type="tel" id="tel" />
+                    </div>
+    
+                    <div class="form-field">
+                        <label class="label" for="email">Email</label>
+                        <input class="input-type" type="email" id="email" />
+                    </div>
+    
+                    <label class="agreements"><input class="input-agreements" type="checkbox" />by clicking the button, you
+                        agree to the public offer agreement and privacy
+                        policy</label>
+    
+                    <button class="ordered-button" type="submit">Order</button>
+                </div>
+            </form>
+        </div>
 
     </div>
 </header>
