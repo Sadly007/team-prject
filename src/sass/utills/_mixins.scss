@@ -5,18 +5,15 @@
   flex-wrap: $fw;
 }
 
-
-@mixin grid-item($ml: 32px, $mt: 32px) {
-    margin-left: $ml;
-    margin-top: $mt;
-=======
+// @mixin grid-item($ml: 32px, $mt: 32px) {
+//     margin-left: $ml;
+//     margin-top: $mt;
+// =======
 @mixin grid-item($mr: 32px, $mb: 32px) {
   margin-right: $mr;
   margin-bottom: $mb;
 }
 //Добавлять calc отдельно//
-
-
 
 @mixin flex-aline($disp: flex, $jc: center, $ai: center) {
   display: $disp;
