@@ -11,23 +11,23 @@
   background-image: linear-gradient(
     to bottom,
     var(--background-color) 21%,
-    #fafafa 21%,
-    #fafafa 100%
+    var(--white-color) 21%,
+    var(--white-color) 100%
   );
   @include tablet {
     background-image: linear-gradient(
       to bottom,
       var(--background-color) 57%,
-      #fafafa 57%,
-      #fafafa 100%
+      var(--white-color) 57%,
+      var(--white-color) 100%
     );
   }
   @include desktop {
     background-image: linear-gradient(
       to bottom,
       var(--background-color) 21%,
-      #fafafa 21%,
-      #fafafa 100%
+      var(--white-color) 21%,
+      var(--white-color) 100%
     );
   }
 }
