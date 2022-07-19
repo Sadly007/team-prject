@@ -1,14 +1,37 @@
-<section class="container" id="products-anchor">
+
+<section class="container products" id="products-anchor">
+
+
+
   <p class="products__pre-header">100% natural</p>
   <h2 class="products__header">products</h2>
-  <ul class="list">
-    <li>
+  <ul class="products__list list">
+    <li class="products__link">
       <div class="products__pink">
-        <img
-          class="products__img-pink"
-          src="./images/products/ice-cream-mob-1x.png"
-          alt="ice cream"
+        <source
+          srcset="
+            ./images/products/ice-cream-mob-1x.png 1x,
+            ./images/products/ice-cream-mob-2x.png 2x
+          "
+          media="(min-width: 1200px)"
         />
+        <source
+          srcset="
+            ./images/products/ice-cream-mob-1x.png 1x,
+            ./images/products/ice-cream-mob-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/products/ice-cream-mob-1x.png 1x,
+            ./images/products/ice-cream-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img class="products__img-pink" src="./images/products/ice-cream-mob-1x.png" width="280" alt="ice-cream" />
+      </picture>
+
         <h3 class="products__item">ice cream</h3>
         <span class="span"></span>
         <p class="products__text">
@@ -22,14 +45,31 @@
         </a>
       </div>
     </li>
-    <li class="products__list">
+    <li class="products__link">
       <div class="products__coffee">
-        <img
-          class="products__img-coffee"
-          src="./images/products/ice-coffee-mob-1x.png"
-          alt="ice coffee"
+        <source
+          srcset="
+          ./images/products/ice-coffee-mob-1x.png 1x,
+          ./images/products/ice-coffee-mob-2x.png 2x
+          "
+          media="(min-width: 1200px)"
         />
-
+        <source
+          srcset="
+          ./images/products/ice-coffee-mob-1x.png 1x,
+          ./images/products/ice-coffee-mob-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+          ./images/products/ice-coffee-mob-1x.png 1x,
+          ./images/products/ice-coffee-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img class="products__img-coffee" src="./images/products/ice-coffee-mob-1x.png" width="280" alt="ice coffee" />
+      </picture>
         <h3 class="products__item">ice coffee</h3>
         <span class="span"></span>
         <p class="products__text">
@@ -43,15 +83,19 @@
         </a>
       </div>
     </li>
-    <li>
+    <li class="products__link">
       <div class="products__green">
-        <img
-          class="products__img-green"
-          src="./images/products/milkshake-mob-1x.png"
-          alt="milkshakes"
-        />
 
-        <h3 class="products__item">milkshakes</h3>
+        <source srcset="./images/products/milkshake-mob-1x.png 1x,
+        ./images/products/milkshake-mob-2x.png 2x" media="(min-width: 1200px)" />
+        <source srcset="./images/products/milkshake-mob-1x.png 1x,
+        ./images/products/milkshake-mob-2x.png 2x" media="(min-width: 768px)" />
+        <source srcset="./images/products/milkshake-mob-1x.png 1x,
+        ./images/products/milkshake-mob-2x.png 2x" media="(min-width: 320px)" />
+        <img class="products__img-green" src="./images/products/milkshake-mob-1x.png" width="280" alt="milkshakes" />
+      </picture>
+
+              <h3 class="products__item">milkshakes</h3>
         <span class="span"></span>
         <p class="products__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
