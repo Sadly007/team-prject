@@ -1,0 +1,233 @@
+// -------------------------------HERO-----------------------------------
+.hero-content {
+    position: absolute;
+    top: 194px;
+    left: 20px;
+    max-width: 218px;
+    width: 100%;
+
+    @include tablet {
+        top: 102px;
+        left: 32px;
+    }
+    @include desktop{
+        max-width: 277px;
+    }
+}
+
+.hero-text {
+    @media screen and(max-width:767px) {
+        display: none;
+    }
+
+    position: absolute;
+    bottom: 54px;
+    left: 184px;
+    width: 114px;
+    @include font(8px, 400, 1.5);
+    color: var(--white-color);
+
+    @include desktop {
+
+        @include font(14px, null, 1.42);
+        width: 200px;
+        left: 229px;
+        bottom: 84px;
+    }
+}
+
+.hero-arrow {
+    margin-top: 8px;
+    padding: 4px;
+    fill: var(--accent-text-color);
+    border: 1px solid;
+    border-radius: 18px;
+    background-color: var(--white-color);
+
+    @include desktop {
+        padding: 6px;
+        width: 26px;
+        height: 26px
+    }
+}
+
+.hero-title {
+    @include font (26px, 400, 1.14);
+    font-family: var(--secondary-font-family);
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: 0.04em;
+
+    &>span {
+        @include font(48px, 400, 0.96);
+        color: var(--accent-text-color);
+    }
+    @include desktop{
+    @include font (38px, 400, 1.15);
+    letter-spacing: 0.04em;
+    }
+}
+
+// -----------------------RIGHT ICONS----------------------------------------
+.numbers-cafes {
+    position: absolute;
+    top: 92px;
+    right: 32px;
+    width: 43px;
+    height: 44px;
+
+    @media screen and(max-width:767px) {
+        display: none;
+    }
+
+    @include desktop {
+        top: 152px;
+        right: 16px;
+        width: 72px;
+        height: 77px;
+    }
+}
+
+.numbers-cafes__num {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    z-index: 1;
+    font-family: var(--secondary-font-family);
+    @include font(28px, 400, 1.14);
+    color: var(--accent-text-color);
+
+    @include desktop {
+        left: 0;
+        top: 4px;
+        @include font(46px, null, 1.15);
+    }
+}
+
+.numbers-cafes__text {
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+    @include font(8px, 400, 1.25);
+    color: var(--white-color);
+
+    @include desktop {
+        @include font(14px, null, 1.28);
+    }
+}
+
+.hero-ellipse-cafes,
+.hero-ellipse-trucks {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include desktop {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.numbers-trucks {
+    position: absolute;
+    right: 32px;
+    top: 152px;
+
+    width: 51px;
+    height: 43px;
+
+    @media screen and(max-width:767px) {
+        display: none;
+    }
+
+    @include desktop {
+        top: 244px;
+        right: 16px;
+        width: 92px;
+        height: 76px;
+    }
+}
+
+.numbers-trucks__num {
+    position: absolute;
+    top: 1px;
+    left: 7px;
+    z-index: 1;
+    font-family: var(--secondary-font-family);
+    @include font(28px, 400, 1.14);
+    color: var(--accent-text-color);
+
+    @include desktop {
+        top: 3px;
+        left: 15px;
+        @include font(46px, null, 1.15);
+    }
+}
+
+.numbers-trucks__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include font(8px, 400, 1.25);
+    color: var(--white-color);
+
+    @include desktop {
+        @include font(14px, null, 1.28);
+    }
+}
+
+.products-hero-button,
+.how-made-hero-button {
+    @include font(8px, 400, 1.25);
+    border-style: none;
+    border-radius: 20px;
+    height: 24px;
+    padding: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    @include desktop{
+    @include font(14px, 400, 1.28);
+    }
+
+}
+
+.products-hero-button {
+    max-width: 62.4px;
+    width: 100%;
+
+    margin-right: 12px;
+    color: var(--white-color);
+    background-color: var(--accent-text-color);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    @include desktop{
+        max-width: 107px;
+        height: 40px;
+    }
+    &:hover,
+    &:focus{
+        background-color: var(--white-color);
+        color: var(--accent-text-color);
+    }
+
+}
+
+.how-made-hero-button {
+    max-width: 82.8px;
+    width: 100%;
+    color: var(--accent-text-color);
+     transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        @include desktop{
+        max-width: 138px;
+        height: 40px;
+    }
+    &:hover,
+    &:focus{
+        background-color: var(--accent-text-color);
+        color: var(--white-color);
+    }
+}
