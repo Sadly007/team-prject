@@ -512,18 +512,52 @@
   background-size: cover;
   border-radius: 8px;
 }
-.btn {
-  width: 20px;
-  height: 20px;
+
+.gallery__list {
+  display: flex;
+  position: fixed;
+  bottom: 52px;
+  left: calc(50% + 100px);
+  z-index: 11;
+  @include tablet {
+    left: calc(50% + 360px);
+  }
+  @include desktop {
+    left: calc(50% + 590px);
+  }
+}
+.gallery__item + .gallery__item {
+  margin-left: 1px;
+}
+
+.gallery__btn {
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  border: none;
 }
-.btn--rose {
-  background-color: #fea5bb;
+.gallery__btn--rose {
+  background-color: #fea5bba0;
+  border-color: #e18298a0;
 }
-.btn--green {
-  background-color: #a5febb;
+
+.gallery__btn--green {
+  background-color: #a5febba0;
+  border-color: #82e198a0;
+  position: absolute;
+  left: 25%;
+  top: -24px;
 }
-.btn--coffe {
-  background-color: #f0d1a5;
+
+.gallery__btn--coffe {
+  background-color: #f0d1a5a0;
+  border-color: #e1be82a0;
+}
+.gallery__btn--cone {
+  height: 60px;
+  border: 26px solid transparent;
+  border-top: 50px solid #eba442a0;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 26px;
 }
