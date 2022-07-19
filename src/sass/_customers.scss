@@ -172,3 +172,18 @@
   position: static !important;
   margin-top: 32px;
 }
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12px !important;
+  height: 12px !important;
+  background: transparent !important;
+  background-image: url(../images/customer-reviews/house.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border-radius: 0 !important;
+}
