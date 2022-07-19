@@ -11,23 +11,23 @@
   background-image: linear-gradient(
     to bottom,
     var(--background-color) 21%,
-    #fafafa 21%,
-    #fafafa 100%
+    var(--white-color) 21%,
+    var(--white-color) 100%
   );
   @include tablet {
     background-image: linear-gradient(
       to bottom,
       var(--background-color) 57%,
-      #fafafa 57%,
-      #fafafa 100%
+      var(--white-color) 57%,
+      var(--white-color) 100%
     );
   }
   @include desktop {
-      background-image: linear-gradient(
+    background-image: linear-gradient(
       to bottom,
       var(--background-color) 21%,
-      #fafafa 21%,
-      #fafafa 100%
+      var(--white-color) 21%,
+      var(--white-color) 100%
     );
   }
 }
@@ -66,6 +66,30 @@
         background-image: url(../images/gallery/img1-desk-2x.png);
       }
     }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img1-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img1-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img1-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img1-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img1-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img1-desk-2x.png);
+        }
+      }
+    }
   }
   &:nth-child(2) {
     background-image: url(../images/gallery/img2-mob-1x.png);
@@ -84,6 +108,30 @@
       background-image: url(../images/gallery/img2-desk-1x.png);
       @include retina {
         background-image: url(../images/gallery/img2-desk-2x.png);
+      }
+    }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img2-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img2-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img2-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img2-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img2-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img2-desk-2x.png);
+        }
       }
     }
   }
@@ -106,6 +154,30 @@
         background-image: url(../images/gallery/img3-desk-2x.png);
       }
     }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img3-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img3-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img3-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img3-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img3-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img3-desk-2x.png);
+        }
+      }
+    }
   }
   &:nth-child(4) {
     background-image: url(../images/gallery/img4-mob-1x.png);
@@ -124,6 +196,30 @@
       background-image: url(../images/gallery/img4-desk-1x.png);
       @include retina {
         background-image: url(../images/gallery/img4-desk-2x.png);
+      }
+    }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-big-mob-1x.png),
+        url(../images/gallery/img4-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-big-mob-2x.png),
+          url(../images/gallery/img4-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-big-tab-1x.png),
+          url(../images/gallery/img4-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-big-tab-2x.png),
+            url(../images/gallery/img4-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-big-desk-1x.png),
+          url(../images/gallery/img4-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-big-desk-2x.png),
+            url(../images/gallery/img4-desk-2x.png);
+        }
       }
     }
   }
@@ -146,6 +242,30 @@
         background-image: url(../images/gallery/img5-desk-2x.png);
       }
     }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img5-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img5-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img5-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img5-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img5-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img5-desk-2x.png);
+        }
+      }
+    }
   }
   &:nth-child(6) {
     background-image: url(../images/gallery/img6-mob-1x.png);
@@ -164,6 +284,30 @@
       background-image: url(../images/gallery/img6-desk-1x.png);
       @include retina {
         background-image: url(../images/gallery/img6-desk-2x.png);
+      }
+    }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img6-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img6-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img6-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img6-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img6-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img6-desk-2x.png);
+        }
       }
     }
   }
@@ -186,6 +330,30 @@
         background-image: url(../images/gallery/img7-desk-2x.png);
       }
     }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img7-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img7-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img7-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img7-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img7-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img7-desk-2x.png);
+        }
+      }
+    }
   }
   &:nth-child(8) {
     background-image: url(../images/gallery/img8-mob-1x.png);
@@ -204,6 +372,30 @@
       background-image: url(../images/gallery/img8-desk-1x.png);
       @include retina {
         background-image: url(../images/gallery/img8-desk-2x.png);
+      }
+    }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img8-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img8-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img8-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img8-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img8-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img8-desk-2x.png);
+        }
       }
     }
   }
@@ -226,6 +418,30 @@
         background-image: url(../images/gallery/img9-desk-2x.png);
       }
     }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img9-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img9-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img9-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img9-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img9-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img9-desk-2x.png);
+        }
+      }
+    }
   }
   &:nth-child(10) {
     background-image: url(../images/gallery/img10-mob-1x.png);
@@ -246,12 +462,37 @@
         background-image: url(../images/gallery/img10-desk-2x.png);
       }
     }
+    &:hover {
+      background-image: url(../images/gallery/frost-frame-small-mob-1x.png),
+        url(../images/gallery/img10-mob-1x.png);
+      @include retina {
+        background-image: url(../images/gallery/frost-frame-small-mob-2x.png),
+          url(../images/gallery/img10-mob-2x.png);
+      }
+      @include tablet {
+        background-image: url(../images/gallery/frost-frame-small-tab-1x.png),
+          url(../images/gallery/img10-tab-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-tab-2x.png),
+            url(../images/gallery/img10-tab-2x.png);
+        }
+      }
+      @include desktop {
+        background-image: url(../images/gallery/frost-frame-small-desk-1x.png),
+          url(../images/gallery/img10-desk-1x.png);
+        @include retina {
+          background-image: url(../images/gallery/frost-frame-small-desk-2x.png),
+            url(../images/gallery/img10-desk-2x.png);
+        }
+      }
+    }
   }
 
-  @include transit();
-
+  transition: background-image 1000ms var(--time-function),
+    transform 1000ms var(--time-function);
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
+    z-index: 1;
   }
 }
 .grid {
@@ -270,4 +511,53 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
+}
+
+.gallery__list {
+  display: flex;
+  position: fixed;
+  bottom: 52px;
+  left: calc(50% + 100px);
+  z-index: 11;
+  @include tablet {
+    left: calc(50% + 360px);
+  }
+  @include desktop {
+    left: calc(50% + 590px);
+  }
+}
+.gallery__item + .gallery__item {
+  margin-left: 1px;
+}
+
+.gallery__btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.gallery__btn--rose {
+  background-color: #fea5bba0;
+  border-color: #e18298a0;
+}
+
+.gallery__btn--green {
+  background-color: #a5febba0;
+  border-color: #82e198a0;
+  position: absolute;
+  left: 25%;
+  top: -24px;
+}
+
+.gallery__btn--coffe {
+  background-color: #f0d1a5a0;
+  border-color: #e1be82a0;
+}
+.gallery__btn--cone {
+  height: 60px;
+  border: 26px solid transparent;
+  border-top: 50px solid #eba442a0;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 26px;
 }
