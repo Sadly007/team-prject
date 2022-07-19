@@ -5,31 +5,38 @@
   --time-duration: 250ms;
   --white-color: #ffffff;
   --primary-text-color: #000000;
-  --background-color: #fff5f6;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --time-duration: 250ms;
   // rose theme #fea5bb
   --secondary-text-color: #907e82;
   --accent-text-color: #d41443;
   --accent-background-color: #ffb8ca;
   --secondary-accent-color: #ffa5ba;
-
-  --primary-icon-bg-color: #fea5bb;
-  --modal-accent-color:#F36072;
-  --menu-background-color:#E17992;
   --background-color: #fff5f6;
-  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --time-duration: 250ms;
+  --primary-icon-bg-color: #fea5bb;
+  --modal-accent-color: #f36072;
+  --menu-background-color: #e17992;
+  --menu-border-top-color: #e18298;
 
   // green theme #A5FEBB
   // --secondary-text-color: #7e9082;
   // --accent-text-color: #14d443;
+  //--background-color: #f5fff6;
   // --accent-background-color: #b8ffca;
   // --secondary-accent-color: #a5ffba;
   // --primary-icon-bg-color: #a5febb;
+  //--modal-accent-color: #60f372;
+  //--menu-background-color: #79e192;
+  //--menu-border-top-color: #82e198;
 
   // coffe theme #f0d1a5;
   // --secondary-text-color: #9e8c72;
   // --accent-text-color: #8a6d45;
+  //--background-color: #fffcf5;
   // --accent-background-color: #f2d6ae;
   // --secondary-accent-color: #f2cb94;
   // --primary-icon-bg-color: #f2c585;
+  //--modal-accent-color: #f3b860;
+  //--menu-background-color: #e1b679;
+  //--menu-border-top-color: #e1be82;
 }
