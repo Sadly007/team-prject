@@ -1,26 +1,33 @@
 .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
     background-color: var(--menu-background-color);
-    z-index: 3;
-
 
     width: 250px;
     height: 100vh;
     overflow: auto;
-    transform: translateX(0);
-    transition-property: transform, opacity;
+    transition-property: right,opacity, visibility,transform;
     transition-duration: 500ms;
     animation-timing-function: ease;
+    opacity: 1;
 
-    &.is-hidden {
-        transform: translateX(250px);
-        opacity: 0;
-        pointer-events: none;
-    }
+
 }
-
+.menu-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    transform: translateX(0);
+        transition-property: opacity, transform;
+            transition-duration: 500ms;
+            animation-timing-function: ease;
+            opacity: 1;
+    &.is-hidden {
+            transform: translateX(250px);
+            pointer-events: none;
+            opacity: 0;
+        }
+}
+.is-none{display: none}
 .menu-nav {
     @include font(14px, 700, 1.28);
     color: var(--white-color);

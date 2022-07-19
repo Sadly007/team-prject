@@ -1,12 +1,11 @@
 .header{
     background-color: var(--accent-background-color);
 }
+
 .header-container{
     position: relative;
 
-
     height: 502px;
-    overflow: hidden;
     @include tablet{
         height: 416px;
     }
@@ -133,7 +132,7 @@ transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     right: 185px;
     width: 335px;
     height: 333px;
-animation-name: elipse-scale;
+    animation-name: elipse-scale;
     animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
