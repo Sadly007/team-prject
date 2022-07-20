@@ -106,7 +106,7 @@
   }
   &__pink {
     width: 100%;
-    background: var(--accent-background-color);
+    background: #ffa5ba;
     border-radius: 24px;
     padding: 160px 40px 40px 40px;
     position: relative;
@@ -120,7 +120,7 @@
     }
   }
   &__coffee {
-    background: var(--ice-coffee-card-color);
+    background: #F0D1A5;
     border-radius: 24px;
     padding: 160px 40px 40px 40px;
     position: relative;
@@ -134,7 +134,7 @@
     }
   }
   &__green {
-    background: var(--milkshake-card-color);
+    background: #C2E297;
     border-radius: 24px;
     padding: 160px 40px 40px 40px;
     position: relative;
@@ -252,13 +252,13 @@
       transform: scale(0);
     }
     &-ice-cream {
-      background-color: var(--accent-background-color);
+      background-color: #ffa5ba;
     }
     &-ice-coffee {
-      background-color: var(--ice-coffee-card-color);
+      background-color: #F0D1A5;
     }
     &-milkshake {
-      background-color: var(--milkshake-card-color);
+      background-color: #C2E297;
     }
 }
 
@@ -318,7 +318,15 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--accent-text-color);
+    &-ice-cream {
+      color: #c7133e; 
+    }
+    &-ice-coffee {
+      color: #8a6d45; 
+    }
+    &-milkshake {
+      color: #14d443; 
+    }
   
     @include tablet {
       margin-bottom: 20px;
@@ -334,8 +342,7 @@
     font-family: var(--primary-font-family), sans-serif;
     @include font (14px, 400, 1.17);
     text-align: left;
-    color: var(--secondary-accent-color);
-  
+  color: #000;
     @include tablet {
   
       @include font (20px, 400, 1.15);
