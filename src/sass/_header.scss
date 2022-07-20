@@ -27,7 +27,7 @@
         transform: translate(-50%);
     }
     @include tablet {
-        width: 100vw;
+        width: 768px;
     }
     @include desktop {
         width: 1200px;
