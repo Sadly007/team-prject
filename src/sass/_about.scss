@@ -87,7 +87,10 @@
     }
     &__text {
         margin-bottom: 26px;
-        width: 220px;
+        max-width: 220px;
+        @include mobile {
+            width: 220px
+        }
         @include font (12px, 500, 1.62);
         
         @include tablet {
