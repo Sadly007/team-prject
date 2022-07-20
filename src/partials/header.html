@@ -61,11 +61,11 @@
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="header-btn">
+            <button type="button" class="header-btn menu-hid">
                 <svg class="header-menu" width="20px" height="16px">
                     <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
                 </svg>
-                <button type="button" class="header__buy-button buy-button" header-modal-open1>Buy now <span
+                <button type="button" class="header__buy-button buy-button btn-hid" header-modal-open1>Buy now <span
                         class="buy-button__symbol"> <svg class="buy-button__svg" width="6" height="10">
                             <use href="./images/icons.svg#icon-arrow1"></use>
                         </svg></span></button>
@@ -105,7 +105,8 @@
 
 
     <!-- --------------------------MENU------------------------------------ -->
-    <div class="menu is-hidden">
+    <div class="menu-wrapper is-hidden">
+    <div class="menu ">
         <button type="button" class="close-btn">
             <svg class="menu__icon-close" width="14" height="14">
                 <use href="./images/icons.svg#icon-close"></use>
@@ -137,6 +138,7 @@
             </ul>
         </nav>
     </div>
+</div>
     <!-- -----------------------------------MODAL---------------------------------- -->
     
     <div class="backdrop backdrop--is-hidden" header-modal1>

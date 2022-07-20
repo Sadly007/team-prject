@@ -1,27 +1,34 @@
 .menu {
-    position: absolute;
-    right: 0;
-    top: 0;
     background-color: var(--menu-background-color);
-    z-index: 3;
-
 
     width: 250px;
     height: 100vh;
     overflow: auto;
-    transform: translateX(0);
-    transition-property: transform, opacity;
+    transition-property: right, opacity, visibility, transform;
     transition-duration: 500ms;
     animation-timing-function: ease;
+    opacity: 1;
+
+
+}
+.btn-hdn{
+    display:none;
+}
+.menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    transform: translateX(0);
+    transition-property: opacity, transform;
+    transition-duration: 500ms;
+    animation-timing-function: ease;
+    opacity: 1;
 
     &.is-hidden {
         transform: translateX(250px);
-        opacity: 0;
         pointer-events: none;
-    }
-
-    @include desktop {
-        display: none
+        opacity: 0;
     }
 }
 
