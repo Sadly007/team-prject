@@ -4,9 +4,12 @@
 @import './base/reset';
 @import './base/body';
 @import './base/container';
+@import './base/hidden';
 
 @import './common';
 @import './header';
+@import './_components/header-modal';
+@import './_components/header-menu';
 @import './hero';
 @import './products';
 @import './about';

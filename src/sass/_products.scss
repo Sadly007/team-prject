@@ -2,10 +2,13 @@
   display: flex;
   justify-content: center;
 
+  flex-direction: column;
+
   padding-top: 60px;
   padding-bottom: 60px;
 
   &__list {
+
     display: flex;
     flex-direction: column;
     @include tablet {
@@ -14,6 +17,12 @@
   }
   &__item:not(:last-child) {
     display: flex;
+   @include tablet {
+      display: flex;
+    }
+  }
+  &__link:not(:last-child) {
+
     @include tablet {
       margin-right: 16px;
     }

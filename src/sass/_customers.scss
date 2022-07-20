@@ -1,0 +1,186 @@
+.container--paddings {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include tablet {
+    padding-right: 74px;
+    padding-left: 74px;
+  }
+  @include desktop {
+    padding: 120px 116px;
+  }
+}
+
+.reviews__foto {
+  width: 85px;
+  height: 85px;
+  border-radius: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.reviews__box {
+  padding-top: 43px;
+  padding-bottom: 17px;
+  background-color: #fafafa;
+  @include tablet {
+    padding: 37px 6px 36px;
+    background-color: rgba($color: #fafafa, $alpha: 0.4);
+  }
+  @include desktop {
+    padding: 47px 74px 31px 72px;
+    background-color: #fafafa;
+  }
+}
+.reviews__text {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: var(--primary-text-color);
+  max-width: 157px;
+  margin: 0 auto;
+  padding-right: 9px;
+  padding-left: 14px;
+  box-sizing: content-box;
+  z-index: 0;
+  @include tablet {
+    max-width: 100%;
+    padding-right: 49px;
+    padding-left: 45px;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    padding-right: 35px;
+    padding-left: 36px;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+
+.gradient {
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 29px,
+    #e1e1e1 31px
+  );
+  @include tablet {
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 28px,
+      #e1e1e1 30px
+    );
+  }
+  @include desktop {
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 27px,
+      #e1e1e1 30px
+    );
+  }
+}
+
+.reviews__text::before {
+  z-index: -1;
+  position: absolute;
+  top: -15px;
+  left: 3px;
+  content: '';
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  background-size: contain;
+  background-image: url(../images/customer-reviews/quotes.svg);
+  @include desktop {
+    top: -15px;
+    left: 0px;
+  }
+}
+
+.reviews__slider {
+  margin-top: 16px;
+  @include tablet {
+    margin-top: 4px;
+  }
+  @include desktop {
+    margin-top: 16px;
+  }
+}
+
+.reviews__slider-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--primary-text-color);
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  @include desktop {
+    font-size: 20px;
+    line-height: 1.85;
+  }
+}
+
+.reviews__dot {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--marker-background-color);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+
+.reviews__dot::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--marker-background-color);
+  display: block;
+}
+
+.reviews__dot::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--marker-background-color);
+  display: block;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12px !important;
+  height: 12px !important;
+  background: transparent !important;
+  background-image: url(../images/customer-reviews/house.svg) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border-radius: 0 !important;
+}

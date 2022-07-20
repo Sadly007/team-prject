@@ -1,0 +1,316 @@
+.header{
+    background-color: var(--accent-background-color);
+    
+}
+.header-container{
+    position: relative;
+
+
+    height: 502px;
+    overflow: hidden;
+    @include tablet{
+        height: 416px;
+    }
+    @include desktop{
+        height: 664px;
+    }
+}
+
+.elips-container {
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    @include mobile {
+        width: 320px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    @include tablet {
+        width: 100vw;
+    }
+    @include desktop {
+        width: 1200px;
+    }
+
+
+    // left: 50%;
+    // transform: translate(-50%);
+    // left: 36px;
+    // padding: -20px;
+}
+
+.wrap-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+
+    
+}
+
+.header-box{
+    display: flex;
+    padding-top: 8px;
+    @include tablet {
+    padding-top: 32px;
+    justify-content: space-between;
+    }
+    @include desktop{
+    align-items: center;
+    }
+}
+.mob-logo{
+    display: block;
+    width: 199px;
+}
+.header-btn,
+.close-btn{
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    border-style: none;
+    background-color: transparent;
+    @include desktop{
+        display: none;
+    }
+}
+.close-btn{
+right: 32px;
+}
+.header-btn{
+    @include tablet{
+        z-index: 1;
+        top: 46px;
+        right: 224px;
+    }
+}
+
+
+.header__menu-nav{
+    @media screen and(max-width:1199px) {
+        display: none;
+    }
+}
+
+
+.header__buy-button{
+    display: none;
+    @include tablet{
+        display: block;
+        max-width: 160px;
+    }
+}
+
+.buy-button{
+    position: relative;
+        @include font(16px, 700, 1.31);
+        color: var(--accent-text-color);
+        padding: 0;
+
+        width: 100%;
+        height: 44px;
+        border-style: none;
+        border-radius: 22px;
+        cursor: pointer;
+}
+
+.buy-button__svg{
+position: absolute;
+top: 50%;
+right: 37px;
+transform: translateY(-50%);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.home-anchor{
+    z-index: 12;
+    bottom: 21px;
+    right: 12px;
+    position: fixed;
+    transform: rotate(-90deg);
+    padding: 4px;
+    border-radius: 50%;
+    opacity: 0.8;
+    fill: var(--accent-text-color);
+}
+
+// --------------------------------PICTURES--------------------------------------------------
+
+.header-icecream{
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    width: 171px;
+    height: 410px;
+    @include tablet{
+    width: 143px;
+    height: 336px;
+    left: 332px;
+    }
+    @include desktop{
+    width: 236px;
+    height: 557px;
+    left: 636px;
+    }
+          animation-name: icecream-twik;
+          animation-duration: 2000ms;
+          animation-timing-function: ease;
+}
+.header-elipse {
+    position: absolute;
+    top: 43px;
+    right: 185px;
+    width: 335px;
+    height: 333px;
+animation-name: elipse-scale;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    @include tablet {
+        top: 43px;
+        left: 248px;
+    }
+    @include desktop{
+        top: 54px;
+        left: 517px;
+        width: 534px;
+        height: 534px;
+    }
+    @media screen and (max-width:767px) {
+        width: 346px;
+        height: 344px;
+        top: 83px;
+        left: 36px;
+    }
+    
+    
+
+}
+.header-milk{
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+
+    width: 152px;
+    height: 154px;
+    @include desktop{
+    width: 213px;
+    height: 216px;
+    left: 16px;
+    bottom: 60px;
+    }
+    @media screen and(max-width:767px) {
+        display: none;
+    }
+}
+.header-girl{
+    position: absolute;
+    bottom: 1px;
+    right: 32px;
+    width: 190px;
+    height: 150px;
+
+    @media screen and(max-width:767px) {
+     display: none;
+    }
+    @include desktop{
+        right: 16px;
+        width: 304px;
+        height: 241px;
+    }
+}
+
+
+
+// ------------------------------Animations----------------------------------------
+
+
+
+.shake-horizontal {
+    -webkit-animation: shake-horizontal 10s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10% {
+                -webkit-transform: translateX(-10px);
+                    transform: translateX(-10px);
+    }
+    20%{
+                -webkit-transform: translateX(-10px);
+                    transform: translateX(-10px);
+    }
+    50%{
+        -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    }
+        60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes elipse-scale {
+
+
+    50% {
+        transform: scale(0.7);
+    }
+
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes icecream-twik {
+    0% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes icecream-scale {
+    0% {
+        transform: scale(0.8)
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
