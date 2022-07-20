@@ -5,9 +5,17 @@
   flex-wrap: $fw;
 }
 
+
+@mixin grid-item($mr: 32px, $mb: 32px) {
+  margin-right: $mr;
+  margin-bottom: $mb;
+}
+//Добавлять calc отдельно//
+
 @mixin grid-item($ml: 32px, $mt: 32px) {
-    margin-left: $ml;
-    margin-top: $mt;
+  margin-left: $ml;
+  margin-top: $mt;
+  //Добавлять calc отдельно//
 
 }
 
