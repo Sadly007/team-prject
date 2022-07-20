@@ -71,11 +71,11 @@
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="header-btn">
+            <button type="button" class="header-btn menu-hid">
                 <svg class="header-menu" width="20px" height="16px">
                     <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
                 </svg>
-                <button type="button" class="header__buy-button buy-button" header-modal-open1>Buy now <span
+                <button type="button" class="header__buy-button buy-button btn-hid" header-modal-open1>Buy now <span
                         class="buy-button__symbol"> <svg class="buy-button__svg" width="6" height="10">
                             <use href="./images/icons.svg#icon-arrow1"></use>
                         </svg></span></button>
@@ -115,17 +115,51 @@
 
 
 
-        <!-- --------------------------MENU------------------------------------ -->
-        <div class="menu is-hidden">
-            <button type="button" class="close-btn">
-                <svg class="menu__icon-close" width="14" height="14">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <button type="button" class="menu-nav__buy-button buy-button" header-modal-open2>Buy now <span
+
+    <!-- --------------------------MENU------------------------------------ -->
+    <div class="menu-wrapper is-hidden">
+    <div class="menu ">
+        <button type="button" class="close-btn">
+            <svg class="menu__icon-close" width="14" height="14">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <button type="button" class="menu-nav__buy-button buy-button" header-modal-open2>Buy now <span
                     class="buy-button__symbol"><svg class="buy-button__svg" width="6" height="10">
                         <use href="./images/icons.svg#icon-arrow1"></use>
                     </svg></span>
+        </button>
+        <nav class="menu-nav">
+
+            <ul class="menu-nav__list list">
+                <li class="menu-nav__item">
+                    <a href="#header-anchor" class="menu-nav__link link"> Home</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> About us</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#about-anchor" class="menu-nav__link link"> How it’s made?</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="#products-anchor" class="menu-nav__link link"> Our products</a>
+                </li>
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link link"> Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <!-- -----------------------------------MODAL---------------------------------- -->
+    
+    <div class="backdrop backdrop--is-hidden" header-modal1>
+        <div class="modal">
+            <button class="modal-close-button" type="button" header-modal-close1>
+                <svg width="12px" height="12px">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+
             </button>
             <nav class="menu-nav">
 
