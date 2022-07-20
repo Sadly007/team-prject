@@ -234,8 +234,8 @@
     }
 }
 
-.how-made,
-.how-made__list {
+.how-made-title,
+.how-made {
     margin-bottom: 15px;
     font-family: var(--secondary-font-family), sans-serif;
     @include font (20px, 400, 1.15);
@@ -253,7 +253,7 @@
     }
 }
 
-.how-made__list {
+.how-made {
     align-content: center;
     margin-bottom: 0;
     padding-left: 20px;
