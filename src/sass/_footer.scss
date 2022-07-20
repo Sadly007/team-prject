@@ -8,9 +8,12 @@
 
     color: var(--secondary-accent-color);
 
-    width: 232px;
+    max-width: 232px;
+    @include mobile {
+        width: 232px;
+    }
 
-    @media screen and (min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) {
         font-size: 26px;
         line-height: 1.15;
         letter-spacing: 0.04em;

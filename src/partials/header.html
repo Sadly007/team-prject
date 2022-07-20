@@ -1,14 +1,17 @@
-<header class="header" id="header-anchor">
-
-
+<header class="header " id="header-anchor">
+    <div class="wrap-container ">
+            <div class=" elips-container">
+                <picture >
+                        <source srcset="./images/header/desktop-elipse-1x.png, ./images/header/desktop-elipse-2x.png 2x" media="(min-width:1200px)" type="image/png">
+                        <source srcset="./images/header/tab-elipse-1x.png, ./images/header/tab-elipse-2x.png 2x" media="(min-width:320px)" type="image/png">
+                        <img src="./images/header/tab-elipse-1x.png" alt="elipse"  class="header-elipse elipse-scale">
+                </picture>
+            </div>
+    </div>
     <div class="container header-container">
 
         <!-- -------------------------------PICTURES--------------------------------------- -->
-        <picture >
-            <source srcset="./images/header/desktop-elipse-1x.png, ./images/header/desktop-elipse-2x.png 2x" media="(min-width:1200px)" type="image/png">
-            <source srcset="./images/header/tab-elipse-1x.png, ./images/header/tab-elipse-2x.png 2x" media="(min-width:320px)" type="image/png">
-            <img src="./images/header/tab-elipse-1x.png" alt="elipse"  class="header-elipse elipse-scale">
-        </picture>
+        
         <picture >
             <source srcset="./images/header/desktop-icecream-1x.png 1x, ./images/header/desktop-icecream-2x.png 2x" media="(min-width:1200px)" type="image/png">
             <source srcset="./images/header/tab-icecream-1x.png 1x, ./images/header/tab-icecream-2x.png 2x" media="(min-width:768px)" type="image/png">
@@ -62,7 +65,7 @@
                 <svg class="header-menu" width="20px" height="16px">
                     <use class="icon-burger" href="./images/icons.svg#icon-burger"></use>
                 </svg>
-                <button type="button" class="header__buy-button buy-button" data-modal-open>Buy now <span
+                <button type="button" class="header__buy-button buy-button" header-modal-open1>Buy now <span
                         class="buy-button__symbol"> <svg class="buy-button__svg" width="6" height="10">
                             <use href="./images/icons.svg#icon-arrow1"></use>
                         </svg></span></button>
@@ -108,7 +111,7 @@
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <button type="button" class="menu-nav__buy-button buy-button" data-modal-open2>Buy now <span
+        <button type="button" class="menu-nav__buy-button buy-button" header-modal-open2>Buy now <span
                     class="buy-button__symbol"><svg class="buy-button__svg" width="6" height="10">
                         <use href="./images/icons.svg#icon-arrow1"></use>
                     </svg></span>
@@ -136,9 +139,9 @@
     </div>
     <!-- -----------------------------------MODAL---------------------------------- -->
     
-    <div class="backdrop backdrop--is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" header-modal1>
         <div class="modal">
-            <button class="modal-close-button" type="button" data-modal-close="">
+            <button class="modal-close-button" type="button" header-modal-close1>
                 <svg width="12px" height="12px">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>

@@ -517,14 +517,11 @@
   display: flex;
   position: fixed;
   bottom: 52px;
-  left: calc(50% + 100px);
+  // left: calc(50% + 100px);
+  right: 0px;
   z-index: 11;
-  @include tablet {
-    left: calc(50% + 360px);
-  }
-  @include desktop {
-    left: calc(50% + 590px);
-  }
+ 
+  
 }
 .gallery__item + .gallery__item {
   margin-left: 1px;
@@ -534,15 +531,16 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  border-color: #000000a0;
 }
 .gallery__btn--rose {
   background-color: #fea5bba0;
-  border-color: #e18298a0;
+  // border-color: #e18298a0;
 }
 
 .gallery__btn--green {
   background-color: #a5febba0;
-  border-color: #82e198a0;
+  // border-color: #82e198a0;
   position: absolute;
   left: 25%;
   top: -24px;
@@ -550,7 +548,7 @@
 
 .gallery__btn--coffe {
   background-color: #f0d1a5a0;
-  border-color: #e1be82a0;
+  // border-color: #e1be82a0;
 }
 .gallery__btn--cone {
   height: 60px;

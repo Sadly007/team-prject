@@ -1,5 +1,6 @@
 .header{
     background-color: var(--accent-background-color);
+    
 }
 .header-container{
     position: relative;
@@ -14,6 +15,40 @@
         height: 664px;
     }
 }
+
+.elips-container {
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    @include mobile {
+        width: 320px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    @include tablet {
+        width: 100vw;
+    }
+    @include desktop {
+        width: 1200px;
+    }
+
+
+    // left: 50%;
+    // transform: translate(-50%);
+    // left: 36px;
+    // padding: -20px;
+}
+
+.wrap-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+
+    
+}
+
 .header-box{
     display: flex;
     padding-top: 8px;
@@ -93,14 +128,13 @@ transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .home-anchor{
-    z-index: 5;
-    bottom: 30px;
-    right: 30px;
+    z-index: 12;
+    bottom: 21px;
+    right: 12px;
     position: fixed;
     transform: rotate(-90deg);
     padding: 4px;
     border-radius: 50%;
-    background-color: var(--accent-background-color);
     opacity: 0.8;
     fill: var(--accent-text-color);
 }
@@ -138,18 +172,24 @@ animation-name: elipse-scale;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    @include tablet {
+        top: 43px;
+        left: 248px;
+    }
+    @include desktop{
+        top: 54px;
+        left: 517px;
+        width: 534px;
+        height: 534px;
+    }
     @media screen and (max-width:767px) {
         width: 346px;
         height: 344px;
         top: 83px;
         left: 36px;
     }
-    @include desktop{
-        top: 54px;
-        right: 149px;
-        width: 534px;
-        height: 534px;
-    }
+    
+    
 
 }
 .header-milk{
@@ -193,7 +233,7 @@ animation-name: elipse-scale;
 
 
 .shake-horizontal {
-    -webkit-animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    -webkit-animation: shake-horizontal 10s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
     animation-iteration-count: infinite;
 }
