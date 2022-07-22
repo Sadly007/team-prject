@@ -518,44 +518,79 @@
   position: fixed;
   bottom: 52px;
   // left: calc(50% + 100px);
-  right: 0px;
+  right: 5px;
   z-index: 11;
  
   
 }
-.gallery__item + .gallery__item {
-  margin-left: 1px;
-}
 
 .gallery__btn {
-  width: 25px;
-  height: 25px;
+   background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%;
-  border-color: #000000a0;
+  border: none;
+  
+  
+}
+.gallery__btn--cone {
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/gallery/cone.png);
+  position: absolute;
+  left: -25px;
+  top:-25px;
+  z-index: 12;
 }
 .gallery__btn--rose {
-  background-color: #fea5bba0;
-  // border-color: #e18298a0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 16;
+  top: 6px;
+  left: -4px;
 }
 
 .gallery__btn--green {
-  background-color: #a5febba0;
-  // border-color: #82e198a0;
-  position: absolute;
-  left: 25%;
-  top: -24px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+  left: -5px;
+  z-index: 15;
 }
 
 .gallery__btn--coffe {
-  background-color: #f0d1a5a0;
-  // border-color: #e1be82a0;
+  width: 30px;
+  height: 30px;
+ position: absolute;
+  left: 15%;
+  top: -12px;
+  z-index: 14;
 }
-.gallery__btn--cone {
-  height: 60px;
-  border: 26px solid transparent;
-  border-top: 50px solid #eba442a0;
-  border-radius: 10px;
+
+.gallery__list-two{
+  display: flex;
+  position: fixed;
+  bottom: 200px;
+  // left: calc(50% + 100px);
+  right: 0;
+  z-index: 11;
+}
+.gallery__cows-box{
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/gallery/cows.png);
+}
+.gallery__list-box{
   position: absolute;
-  left: 0;
-  top: 26px;
+  top: 230px;
+  left: -60px;
+  width:250px;
+  height: 140px;
+  // overflow:hidden ;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.616);
 }
