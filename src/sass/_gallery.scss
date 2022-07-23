@@ -580,7 +580,7 @@
   right: -300px;
   z-index: 11;
   animation: cows-gluk2 ;
-  animation-duration:120s ;
+  animation-duration:90s ;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -614,11 +614,10 @@ color: var(--accent-text-color);
   display: flex;
   position: fixed;
   left: 20%;
-  // left: calc(50% + 100px);
  bottom: -190px;
   z-index: 11;
   animation: cows-gluk3 ;
-  animation-duration:120s ;
+  animation-duration:90s ;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: normal;
@@ -633,20 +632,52 @@ color: var(--accent-text-color);
 }
 .gallery__list-box3{
   position: absolute;
-  top: 80px;
-  left: 78px;
+  top: 85px;
+  left: 80px;
   width:120px;
   height: 140px;
   // overflow:hidden ;
   border: none;
   background-color: transparent;
-  @include font (11px, 700, 1.17);
+  @include font (13px, 700, 1.20);
   text-align: center;
   
 }
 
-
-
+.gallery__list-4{
+  display: flex;
+  position: fixed;
+  bottom: 200px;
+  // left: calc(50% + 100px);
+  left: -300px;
+  z-index: 11;
+  animation: cows-gluk4 ;
+  animation-duration:90s ;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.gallery__cows-box4{
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/gallery/cows-small.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.gallery__list-box4{
+  position: absolute;
+  top: 140px;
+  left: 125px;
+  width:170px;
+  height: 140px;
+  // overflow:hidden ;
+  border: none;
+  background-color: transparent;
+  @include font (15px, 700, 1.23);
+  text-align: center;
+  
+}
 
 
 
@@ -656,13 +687,13 @@ color: var(--accent-text-color);
   0% {
       transform: translateX(0);
   }
-  27% {
+  29% {
         transform: translateX(0);
     }
   30% {
     transform: translateX(-100%);
 }
-  37% {
+  39% {
     transform: translateX(-100%);
 }
   40% {
@@ -675,38 +706,38 @@ color: var(--accent-text-color);
 }
 @keyframes cows-gluk3 {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
 }
-57% {
-      transform: translateX(0);
+59% {
+      transform: translateY(0);
   }
 60% {
-  transform: translateX(-100%);
+  transform: translateY(-100%);
 }
-67% {
-  transform: translateX(-100%);
+69% {
+  transform: translateY(-100%);
 }
 70% {
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 100% {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 }
 
-@keyframes cows-gluk3 {
+@keyframes cows-gluk4 {
   0% {
     transform: translateX(0);
 }
-87% {
+89% {
       transform: translateX(0);
   }
 90% {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
-97% {
-  transform: translateX(-100%);
+99% {
+  transform: translateX(100%);
 }
 
 100% {
