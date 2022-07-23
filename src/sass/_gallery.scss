@@ -518,8 +518,9 @@
   position: fixed;
   bottom: 52px;
   // left: calc(50% + 100px);
-  right: 5px;
+  right: 15px;
   z-index: 11;
+  
  
   
 }
@@ -542,6 +543,7 @@
   left: -25px;
   top:-25px;
   z-index: 12;
+  background-color: var(--primary-icon-bg-color);
 }
 .gallery__btn--rose {
   width: 30px;
@@ -581,16 +583,24 @@
 .gallery__cows-box{
   width: 300px;
   height: 300px;
-  background-image: url(../images/gallery/cows.png);
+  background-image: url(../images/gallery/cows-small2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .gallery__list-box{
   position: absolute;
-  top: 230px;
-  left: -60px;
-  width:250px;
+  top: 105px;
+  left: 35px;
+  width:120px;
   height: 140px;
   // overflow:hidden ;
-  border: 2px solid aqua;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.616);
+  border: none;
+  background-color: transparent;
+  @include font (14px, 700, 1.17);
+  text-align: center;
+  
+}
+.gallery__text{
+color: var(--accent-text-color);
 }

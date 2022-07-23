@@ -130,12 +130,12 @@ transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 .home-anchor{
     z-index: 12;
     bottom: 21px;
-    right: 24px;
+    right: 33px;
     position: fixed;
     transform: rotate(-90deg);
     padding: 4px;
     border-radius: 50%;
-    opacity: 0.8;
+    // opacity: 0.8;
     fill: var(--accent-text-color);
 }
 
